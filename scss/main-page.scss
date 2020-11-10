@@ -1,0 +1,31 @@
+@import "_queries.scss";
+@import "_variables.scss";
+
+html,
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  font-size: 2rem;
+  list-style: none;
+  justify-content: center;
+}
+
+.navbar-sec {
+  margin: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
