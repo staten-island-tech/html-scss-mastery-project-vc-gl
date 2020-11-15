@@ -1,0 +1,34 @@
+html, 
+body {
+    font-size: 62.5%;
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.container {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 2rem;
+    list-style: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.navbar-sec {
+    margin: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+/*# sourceMappingURL=main-page.css.map */
