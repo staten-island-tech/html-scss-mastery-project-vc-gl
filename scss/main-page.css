@@ -31,4 +31,11 @@ a {
   text-decoration: none;
   color: black;
 }
+
+.image1 img {
+  width: 100vw;
+  height: 60rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 /*# sourceMappingURL=main-page.css.map */
