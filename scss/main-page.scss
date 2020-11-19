@@ -27,7 +27,6 @@ body {
   background-color: #191919;
   font-size: 2.5rem;
   margin: 1rem 0;
-  //background-image: linear-gradient(to right, #cbd5f0 0%, #194f92 30%);
   background-size: 100%;
   -webkit-background-clip: text;
   color: transparent;
@@ -65,13 +64,7 @@ a {
   text-decoration: none;
   color: black;
 }
-/*
-.image1 img {
-  width: 100vw;
-  height: 86vh;
-  object-fit: cover;
-}
-*/
+
 .image1 {
   background-image: url(../img/food.jpeg);
   height: 86vh;
@@ -104,31 +97,35 @@ a {
 
 .welcome-gallery-pic {
   width: 33.333%;
-  // background-size: contain;
-  // background-repeat: no-repeat;
   margin: 1rem 4rem;
 }
 
 .welcome-gallery-pic img {
   width: 100%;
-}
-/*
-.welcome-gallery-pic.one {
-  background-image: url(../img/cupcake.webp);
+
+@media screen and (max-width: 800px) {
+  .welcome-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+  .welcome-gallery-pic {
+    width: 80%;
+  }
+  .welcome {
+    margin: 2rem 10rem;
+  }
 }
 
-.welcome-gallery-pic.two {
-  background-image: url(../img/bread.jpeg);
-}
-
-.welcome-gallery-pic.three {
-  background-image: url(../img/cookies.jpeg);
-}
-*/
 .button {
-  display: block;
+  display: inline-block;
   margin: 1rem;
   padding: 1rem;
   text-decoration: none;
   font-size: 2rem;
+  background-color: #bad7df;
+}
+
+.button:hover {
+  background-color: #92b8c2;
+  transition: all 1s;
 }
