@@ -17,8 +17,20 @@ body {
 }
 
 .top-nav {
+  font-family: "Lato", sans-serif;
+  background-image: linear-gradient(
+    90deg,
+    #000003 0%,
+    #15447c 35%,
+    #00d4ff 100%
+  );
+  background-color: #191919;
   font-size: 2.5rem;
   margin: 1rem 0;
+  //background-image: linear-gradient(to right, #cbd5f0 0%, #194f92 30%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .container {
@@ -41,7 +53,7 @@ body {
 .navbar-sec:after {
   display: block;
   content: "";
-  border-bottom: solid 0.2rem black;
+  border-bottom: solid 0.2rem #efb7ba;
   transform: scaleX(0);
   transition: transform 0.5s ease-in-out;
 }
@@ -53,11 +65,27 @@ a {
   text-decoration: none;
   color: black;
 }
-
+/*
 .image1 img {
   width: 100vw;
   height: 86vh;
   object-fit: cover;
+}
+*/
+.image1 {
+  background-image: url(../img/food.jpeg);
+  height: 86vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.image1_intro {
+  padding: 41rem 0;
+  font-size: 3rem;
+  color: #ffffff;
+  text-shadow: 0.1rem 0.1rem #161414;
+  letter-spacing: 0.5rem;
 }
 
 .welcome {

@@ -14,8 +14,15 @@ body {
 }
 
 .top-nav {
+  font-family: "Lato", sans-serif;
+  background-image: -webkit-gradient(linear, left top, right top, from(#000003), color-stop(35%, #15447c), to(#00d4ff));
+  background-image: linear-gradient(90deg, #000003 0%, #15447c 35%, #00d4ff 100%);
+  background-color: #191919;
   font-size: 2.5rem;
   margin: 1rem 0;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .container {
@@ -42,7 +49,7 @@ body {
 .navbar-sec:after {
   display: block;
   content: "";
-  border-bottom: solid 0.2rem black;
+  border-bottom: solid 0.2rem #efb7ba;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transition: -webkit-transform 0.5s ease-in-out;
@@ -61,11 +68,27 @@ a {
   color: black;
 }
 
+/*
 .image1 img {
   width: 100vw;
   height: 86vh;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
+}
+*/
+.image1 {
+  background-image: url(../img/food.jpeg);
+  height: 86vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.image1_intro {
+  padding: 41rem 0;
+  font-size: 3rem;
+  color: #ffffff;
+  text-shadow: 0.1rem 0.1rem #161414;
+  letter-spacing: 0.5rem;
 }
 
 .welcome {
