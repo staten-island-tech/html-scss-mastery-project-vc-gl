@@ -1,4 +1,13 @@
-/** {
+@charset "UTF-8";
+/*
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+*/
+/*
+* {
   border: 1px solid red;
 }
 */
@@ -8,26 +17,14 @@ body {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Abel", sans-serif;
 }
 
 .top-nav {
   font-family: "Lato", sans-serif;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#000003),
-    color-stop(35%, #15447c),
-    to(#00d4ff)
-  );
-  background-image: linear-gradient(
-    90deg,
-    #000003 0%,
-    #15447c 35%,
-    #00d4ff 100%
-  );
+  background-image: -webkit-gradient(linear, left top, right top, from(#000003), color-stop(35%, #15447c), to(#00d4ff));
+  background-image: linear-gradient(90deg, #000003 0%, #15447c 35%, #00d4ff 100%);
   background-color: #191919;
   font-size: 2.5rem;
   margin: 1rem 0;
@@ -49,8 +46,8 @@ body {
   font-size: 2.5rem;
   list-style: none;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .navbar-sec {
@@ -62,7 +59,7 @@ body {
   content: "";
   border-bottom: solid 0.2rem #efb7ba;
   -webkit-transform: scaleX(0);
-  transform: scaleX(0);
+          transform: scaleX(0);
   -webkit-transition: -webkit-transform 0.5s ease-in-out;
   transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
@@ -71,7 +68,7 @@ body {
 
 .navbar-sec:hover:after {
   -webkit-transform: scaleX(1);
-  transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 a {
@@ -79,13 +76,6 @@ a {
   color: black;
 }
 
-/*
-.image1 img {
-  width: 100vw;
-  height: 86vh;
-  object-fit: cover;
-}
-*/
 .image1 {
   background-image: url(../img/food.jpeg);
   height: 86vh;
@@ -109,7 +99,7 @@ a {
 
 .welcome-header {
   font-size: 4rem;
-  margin: 5rem 0;
+  margin: 5rem 0 4rem 0;
 }
 
 .welcome-gallery {
@@ -120,22 +110,32 @@ a {
 
 .welcome-gallery-pic {
   width: 33.333%;
-  margin: 1rem 4rem;
+  margin: 2rem 4rem;
 }
 
 .welcome-gallery-pic img {
   width: 100%;
 }
 
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+  .welcome-gallery-pic {
+    width: 85%;
+    margin: 1.5rem;
+  }
+  .welcome {
+    margin: 2rem 10rem;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .welcome-gallery {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .welcome-gallery-pic {
     width: 80%;
@@ -145,19 +145,6 @@ a {
   }
 }
 
-/*
-.welcome-gallery-pic.one {
-  background-image: url(../img/cupcake.webp);
-}
-
-.welcome-gallery-pic.two {
-  background-image: url(../img/bread.jpeg);
-}
-
-.welcome-gallery-pic.three {
-  background-image: url(../img/cookies.jpeg);
-}
-*/
 .button {
   display: inline-block;
   margin: 1rem;

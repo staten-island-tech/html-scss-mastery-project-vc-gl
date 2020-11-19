@@ -88,7 +88,7 @@ a {
 
 .welcome-header {
   font-size: 4rem;
-  margin: 5rem 0;
+  margin: 5rem 0 4rem 0;
 }
 
 .welcome-gallery {
@@ -97,11 +97,22 @@ a {
 
 .welcome-gallery-pic {
   width: 33.333%;
-  margin: 1rem 4rem;
+  margin: 2rem 4rem;
 }
 
 .welcome-gallery-pic img {
   width: 100%;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+  .welcome-gallery-pic {
+    width: 85%;
+    margin: 1.5rem;
+  }
+  .welcome {
+    margin: 2rem 10rem;
+  }
+}
 
 @media screen and (max-width: 800px) {
   .welcome-gallery {
