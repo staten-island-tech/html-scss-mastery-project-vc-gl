@@ -58,7 +58,8 @@ body {
   margin: 1rem 1.5rem;
 }
 
-.navbar-sec:after {
+.navbar-sec:after,
+.navbar-sec:focus {
   display: block;
   content: "";
   border-bottom: solid 0.2rem #efb7ba;
@@ -70,14 +71,17 @@ body {
   transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 
-.navbar-sec:hover:after {
+.navbar-sec:hover:after,
+.navbar-sec:focus:after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
 
-a {
+a:link,
+a:visited,
+a:active {
   text-decoration: none;
-  color: black;
+  color: #000000;
 }
 
 .image1 {
@@ -153,16 +157,20 @@ a {
   }
 }
 
-.button {
+.button:link,
+.button:visited,
+.button:active {
   display: inline-block;
   margin: 1rem;
   padding: 1rem;
   text-decoration: none;
   font-size: 2rem;
   background-color: #bad7df;
+  color: #000000;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: #92b8c2;
   -webkit-transition: all 1s;
   transition: all 1s;
