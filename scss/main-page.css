@@ -89,6 +89,7 @@ a:focus {
   text-decoration: none;
   position: relative;
   color: #000000;
+  text-transform: uppercase;
 }
 
 nav .links a:link:before,
