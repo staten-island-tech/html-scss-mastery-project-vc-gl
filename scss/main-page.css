@@ -48,7 +48,6 @@ nav .logo {
       -ms-flex-align: center;
           align-items: center;
   font-size: 2.5rem;
-  color: #000000;
   font-family: "Abel", sans-serif;
   font-weight: bold;
   background-image: -webkit-gradient(linear, left top, right top, from(#3b74df), color-stop(25%, #5387c7), to(#00d4ff));
