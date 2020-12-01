@@ -56,6 +56,7 @@ nav .logo {
   background-size: 100%;
   -webkit-background-clip: text;
   color: transparent;
+  color: black;
 }
 
 nav .links {
