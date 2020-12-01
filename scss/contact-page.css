@@ -81,7 +81,17 @@ a:active {
 .locations-header {
   font-size: 3rem;
   margin: 5rem 0 4rem 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-transition: all 0.2s;
+  transition: 0.2s; 
 }
+
+ .locations-header:hover {
+  -webkit-transform: translate3d(20, 100%, 0);
+        transform: translate3d(20, 100%, 0);
+  letter-spacing: 1rem;
+} 
 
 .locations-gallery {
   display: -webkit-box;
@@ -90,23 +100,104 @@ a:active {
   -webkit-box-direction: normal;
     -ms-flex-direction: row;
   flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .locations-headquarters {
   margin: 2rem 4rem;
-  background-color: turquoise; /* for differentiation purposes */
+ /* background-color: rgb(245, 189, 235); */
+  background-color: #efb7ba;
+  word-wrap: break-word;
+  border: 0.3rem groove black;
 }
 
 .locations-box {
   margin: 2rem 4rem;
-  background-color: violet; /* for differentiation purposes */
+ /* background-color: rgb(245, 189, 245); */
+  background-color: #efb7ba;
+  border: 0.3rem groove black;
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 0;
+  -ms-flex-shrink: 0;
+  flex-shrink: 0;
+  -webkit-flex-basis: 48%;
+  -ms-flex-basis: 48%;
+  flex-basis: 48%; */
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.locations-box:hover, .locations-headquarters:hover {
+  -webkit-filter: drop-shadow(1rem 2rem 1rem #a1fcfc);
+          filter: drop-shadow(1rem 2rem 1rem #a1fcfc);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.form {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: #f2f2f2;
 }
 
 .form-header {
   font-size: 2.5rem;
   margin: 4rem 0 3rem 0;
+}
+
+.form-sec {
+  text-align: left;
+}
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+textarea {
+  height: 20vh;
+  font-family: "Lato", sans-serif; 
+  resize: none;
+}
+
+/* input[type=submit] {
+  background-color: #bad7df;
+  color: black;
+  cursor: pointer;
+  border: none;
+  border-radius: 12%;
+  padding: 0.8rem 2rem;
+}
+
+input[type=submit]:hover {
+  background-color: #efb7ba;
+} */
+
+.submit-btn {
+  background-color: #99ddcc;
+  border: none;
+  color: #000;
+  padding: 0.8rem 2rem;
+  text-align: center;
+  opacity: 0.7;
+  transition: 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 12%;
+}
+
+.submit-btn:hover {
+  opacity: 2;
 }
 
 /*# sourceMappingURL=contact-page.css.map */
