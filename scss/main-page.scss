@@ -39,6 +39,7 @@ nav .logo {
   font-size: 2.5rem;
   font-family: "Abel", sans-serif;
   font-weight: bold;
+  color: black;
   background-image: linear-gradient(
     90deg,
     #3b74df 0%,
@@ -49,7 +50,6 @@ nav .logo {
   background-size: 100%;
   -webkit-background-clip: text;
   color: transparent;
-  color: black;
 }
 nav .links {
   float: right;
