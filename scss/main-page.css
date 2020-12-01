@@ -72,7 +72,7 @@ nav .logo {
   );
   background-size: 100%;
   -webkit-background-clip: text;
-  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 nav .links {
