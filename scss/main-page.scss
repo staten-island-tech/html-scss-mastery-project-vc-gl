@@ -31,6 +31,7 @@ nav {
   background-color: #ffffff;
 }
 nav .logo {
+  background-color: #00d4ff;
   float: left;
   width: 40%;
   height: 100%;
@@ -40,23 +41,17 @@ nav .logo {
   font-family: "Abel", sans-serif;
   font-weight: bold;
   color: black;
-  /*
   background-image: linear-gradient(
     90deg,
     #3b74df 0%,
     #5387c7 25%,
     #00d4ff 100%
   );
-  */
-  background-image: linear-gradient(
-    to top right,
-    rgba(#3b74df, 0),
-    rgba(#5387c7, 25)
-  );
+
   // background-color: #191919;
   background-size: 100%;
   -webkit-background-clip: text;
-  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 nav .links {
   float: right;
