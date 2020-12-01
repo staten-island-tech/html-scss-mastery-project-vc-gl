@@ -17,7 +17,7 @@ body {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Abel", sans-serif;
 }
 
@@ -34,7 +34,6 @@ nav {
   top: 0;
   padding: 0 5%;
   height: 6rem;
-  background-color: #ffffff;
 }
 
 nav .logo {
@@ -45,8 +44,8 @@ nav .logo {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 2.5rem;
   font-family: "Abel", sans-serif;
   font-weight: bold;
@@ -59,8 +58,18 @@ nav .logo {
     #00d4ff 100%
   );
   */
-  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(59, 116, 223, 0)), to(#5387c7));
-  background-image: linear-gradient(to top right, rgba(59, 116, 223, 0), #5387c7);
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    right top,
+    from(rgba(59, 116, 223, 0)),
+    to(#5387c7)
+  );
+  background-image: linear-gradient(
+    to top right,
+    rgba(59, 116, 223, 0),
+    #5387c7
+  );
   background-size: 100%;
   -webkit-background-clip: text;
   color: transparent;
@@ -76,10 +85,10 @@ nav .links {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 nav .links li {
@@ -111,7 +120,7 @@ a:focus:before {
   border-bottom: solid 0.2rem #efb7ba;
   visibility: hidden;
   -webkit-transform: scaleX(0);
-          transform: scaleX(0);
+  transform: scaleX(0);
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
   transition: -webkit-transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;
@@ -138,7 +147,7 @@ nav .icon-burger {
   right: 5%;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 nav .icon-burger .line {
@@ -152,7 +161,13 @@ nav .icon-burger .line {
 }
 
 .image1 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25))), url(../img/food.jpeg);
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.25))
+    ),
+    url(../img/food.jpeg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.25)), url(../img/food.jpeg);
   height: 93vh;
   width: 100vw;
@@ -163,11 +178,11 @@ nav .icon-burger .line {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -237,8 +252,8 @@ nav .icon-burger .line {
     float: none;
     width: auto;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     font-size: 2.5rem;
     color: #000000;
   }
@@ -254,16 +269,28 @@ nav .icon-burger .line {
     height: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    background-image: -webkit-gradient(linear, left top, right top, from(#2673d8c2), color-stop(25%, #3066a7be), to(#00d9ffbb));
-    background-image: linear-gradient(90deg, #2673d8c2 0%, #3066a7be 25%, #00d9ffbb 100%);
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#2673d8c2),
+      color-stop(25%, #3066a7be),
+      to(#00d9ffbb)
+    );
+    background-image: linear-gradient(
+      90deg,
+      #2673d8c2 0%,
+      #3066a7be 25%,
+      #00d9ffbb 100%
+    );
     overflow: hidden;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
   }
@@ -279,11 +306,11 @@ nav .icon-burger .line {
   }
   nav :checked ~ .icon-burger .line:nth-child(1) {
     -webkit-transform: translateY(10px) rotate(225deg);
-            transform: translateY(10px) rotate(225deg);
+    transform: translateY(10px) rotate(225deg);
   }
   nav :checked ~ .icon-burger .line:nth-child(3) {
     -webkit-transform: translateY(-10px) rotate(-225deg);
-            transform: translateY(-10px) rotate(-225deg);
+    transform: translateY(-10px) rotate(-225deg);
   }
   nav :checked ~ .icon-burger .line:nth-child(2) {
     opacity: 0;
@@ -304,11 +331,11 @@ nav .icon-burger .line {
   .welcome-gallery {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .welcome-gallery-pic {
     width: 80%;
