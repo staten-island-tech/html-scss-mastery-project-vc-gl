@@ -51,9 +51,16 @@ nav .logo {
   font-family: "Abel", sans-serif;
   font-weight: bold;
   color: black;
-  background-image: -webkit-gradient(linear, left top, right top, from(#3b74df), color-stop(25%, #5387c7), to(#00d4ff));
-  background-image: linear-gradient(90deg, #3b74df 0%, #5387c7 25%, #00d4ff 100%);
-  background-color: #191919;
+  /*
+  background-image: linear-gradient(
+    90deg,
+    #3b74df 0%,
+    #5387c7 25%,
+    #00d4ff 100%
+  );
+  */
+  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(59, 116, 223, 0)), to(#5387c7));
+  background-image: linear-gradient(to top right, rgba(59, 116, 223, 0), #5387c7);
   background-size: 100%;
   -webkit-background-clip: text;
   color: transparent;
