@@ -261,9 +261,6 @@ nav .icon-burger .line {
   nav .logo {
     float: none;
     width: 40rem;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
