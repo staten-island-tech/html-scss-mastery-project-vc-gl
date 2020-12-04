@@ -28,14 +28,20 @@ nav {
   height: 6rem;
   background-color: #ffffff;
 }
+
+.container-logo {
+  display: flex;
+  height: 3rem;
+}
+
 nav .logo {
   background-color: #00d4ff;
   z-index: 14;
   float: left;
   width: auto;
   height: 100%;
-  display: flex;
   align-items: center;
+  justify-content: center;
   font-size: 2.5rem;
   font-family: "Abel", sans-serif;
   font-weight: bold;
@@ -46,7 +52,6 @@ nav .logo {
     #5387c7 25%,
     #00d4ff 100%
   );
-
   // background-color: #191919;
   background-size: 100%;
   -webkit-background-clip: text;
