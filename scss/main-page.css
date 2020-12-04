@@ -284,6 +284,14 @@ nav .icon-burger .line {
   }
 }
 
+.trial {
+  background-image: -webkit-gradient(linear, left top, right top, from(#3b74df), color-stop(25%, #5387c7), to(#00d4ff));
+  background-image: linear-gradient(90deg, #3b74df 0%, #5387c7 25%, #00d4ff 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @media screen and (max-width: 1200px) and (min-width: 800px) {
   .welcome-gallery-pic {
     width: 85%;
