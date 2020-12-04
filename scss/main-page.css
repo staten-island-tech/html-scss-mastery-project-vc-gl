@@ -258,19 +258,22 @@ nav .icon-burger .line {
     font-size: 20px;
     color: #ffffff;
   }
+  .container-logo {
+    position: relative;
+  }
   nav .logo {
     float: none;
     width: 40rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    position: relative;
+    display: block;
+    padding-top: 2rem;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     font-size: 2.5rem;
     color: #000000;
-    -ms-flex-item-align: 2;
-        align-self: 2;
   }
   nav :checked ~ .links {
     bottom: 0;
