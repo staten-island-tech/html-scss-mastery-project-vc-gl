@@ -220,12 +220,11 @@ nav .icon-burger .line {
 
   nav .logo {
     float: none;
-    max-width: 40rem;
-    display: flex;
+    width: 40rem;
+    display: block;
     justify-content: center;
     font-size: 2.5rem;
     color: #000000;
-    z-index: 20;
   }
   nav :checked ~ .links {
     bottom: 0;
