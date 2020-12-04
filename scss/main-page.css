@@ -31,25 +31,31 @@ nav {
   background-color: #ffffff;
 }
 
-.container-logo {
+nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 3rem;
+}
+
+.container-logo {
+  position: relative;
 }
 
 nav .logo {
   background-color: #00d4ff;
   z-index: 14;
   float: left;
-  width: auto;
+  width: 40rem;
   height: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  vertical-align: middle;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
+  padding-top: 1.2rem;
   font-size: 2.5rem;
   font-family: "Abel", sans-serif;
   font-weight: bold;
@@ -62,7 +68,6 @@ nav .logo {
 }
 
 nav .links {
-  float: right;
   padding: 0;
   margin: 0;
   width: 48%;
@@ -75,6 +80,7 @@ nav .links {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: auto;
 }
 
 nav .links li {
