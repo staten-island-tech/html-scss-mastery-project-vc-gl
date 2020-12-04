@@ -225,6 +225,7 @@ nav .icon-burger .line {
     font-size: 2.5rem;
     color: #000000;
     z-index: 20;
+    overflow: visible;
   }
   nav :checked ~ .links {
     bottom: 0;
