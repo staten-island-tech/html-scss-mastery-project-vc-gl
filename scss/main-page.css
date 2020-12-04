@@ -6,11 +6,10 @@
 1025px — 1200px: Desktops, large screens
 1201px and more —  Extra large screens, TV
 */
-/*
 * {
   border: 1px solid red;
 }
-*/
+
 html,
 body {
   font-size: 62.5%;
@@ -227,16 +226,6 @@ nav .icon-burger .line {
 }
 
 @media screen and (max-width: 868px) {
-  nav .logo {
-    float: none;
-    width: auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    font-size: 2.5rem;
-    color: #000000;
-    z-index: 20;
-  }
   nav .links {
     float: none;
     position: fixed;
@@ -262,9 +251,23 @@ nav .icon-burger .line {
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
   }
-  nav .links a {
+  nav .links a:link,
+  a:visited,
+  a:active,
+  a:focus {
     font-size: 20px;
     color: #ffffff;
+  }
+  nav .logo {
+    float: none;
+    width: 30rem;
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 2.5rem;
+    color: #000000;
+    z-index: 20;
   }
   nav :checked ~ .links {
     bottom: 0;

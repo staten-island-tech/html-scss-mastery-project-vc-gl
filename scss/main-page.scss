@@ -1,11 +1,9 @@
 @import "_queries.scss";
 @import "_variables.scss";
 
-/*
 * {
   border: 1px solid red;
 }
-*/
 
 html,
 body {
@@ -190,14 +188,6 @@ nav .icon-burger .line {
 }
 
 @media screen and (max-width: 868px) {
-  nav .logo {
-    float: none;
-    width: auto;
-    justify-content: center;
-    font-size: 2.5rem;
-    color: #000000;
-    z-index: 20;
-  }
   nav .links {
     float: none;
     position: fixed;
@@ -220,9 +210,21 @@ nav .icon-burger .line {
     box-sizing: border-box;
     transition: all 0.5s ease-in-out;
   }
-  nav .links a {
+  nav .links a:link,
+  a:visited,
+  a:active,
+  a:focus {
     font-size: 20px;
     color: #ffffff;
+  }
+  nav .logo {
+    float: none;
+    width: 30rem;
+    display: block;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: #000000;
+    z-index: 20;
   }
   nav :checked ~ .links {
     bottom: 0;
