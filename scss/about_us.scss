@@ -1,6 +1,15 @@
 @import "_queries.scss";
 @import "_variables.scss";
 
+html,
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $main-font;
+}
+
 nav {
   position: fixed;
   z-index: 10;
