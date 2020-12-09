@@ -73,11 +73,6 @@ a:active {
   color: $black;
 }
 */
-.container-nav {
-  position: relative;
-  margin-top: 5rem;
-}
-
 nav {
   position: fixed;
   z-index: 10;
@@ -89,30 +84,43 @@ nav {
   background-color: #ffffff;
 }
 
-nav .logo {
-  float: left;
-  width: 40%;
-  height: 100%;
+nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.container-logo {
+  position: relative;
+}
+
+nav .logo {
+  background-color: #00d4ff;
+  z-index: 14;
+  float: left;
+  width: 40rem;
+  height: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  vertical-align: middle;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding-top: 1.2rem;
   font-size: 2.5rem;
-  color: #000000;
   font-family: "Abel", sans-serif;
   font-weight: bold;
+  color: black;
   background-image: -webkit-gradient(linear, left top, right top, from(#3b74df), color-stop(25%, #5387c7), to(#00d4ff));
   background-image: linear-gradient(90deg, #3b74df 0%, #5387c7 25%, #00d4ff 100%);
-  background-color: #191919;
   background-size: 100%;
   -webkit-background-clip: text;
-  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 nav .links {
-  float: right;
   padding: 0;
   margin: 0;
   width: 48%;
@@ -125,6 +133,7 @@ nav .links {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: auto;
 }
 
 nav .links li {
@@ -196,6 +205,81 @@ nav .icon-burger .line {
   transition: all 0.3s ease-in-out;
 }
 
+.image1 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25))), url(../img/food.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25)), url(../img/food.jpeg);
+  height: 93vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.image1_intro {
+  font-size: 2.7rem;
+  color: #ffffff;
+  text-shadow: 0.1rem 0.1rem #161414;
+  letter-spacing: 0.5rem;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 1rem;
+}
+
+.welcome {
+  margin: 2rem 15rem;
+  text-align: center;
+}
+
+.welcome-header {
+  font-size: 4rem;
+  margin: 5rem 0 4rem 0;
+}
+
+.welcome-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.welcome-gallery-pic {
+  width: 33.333%;
+  margin: 2rem 4rem;
+}
+
+.welcome-gallery-pic img {
+  width: 100%;
+}
+
+.button:link,
+.button:visited,
+.button:active {
+  display: inline-block;
+  margin: 1rem;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 2rem;
+  background-color: #bad7df;
+  color: #000000;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #92b8c2;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
 @media screen and (max-width: 1100px) {
   nav .links {
     width: 58%;
@@ -203,13 +287,6 @@ nav .icon-burger .line {
 }
 
 @media screen and (max-width: 868px) {
-  nav .logo {
-    float: none;
-    width: auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   nav .links {
     float: none;
     position: fixed;
@@ -235,9 +312,27 @@ nav .icon-burger .line {
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
   }
-  nav .links a {
+  nav .links a:link,
+  a:visited,
+  a:active,
+  a:focus {
     font-size: 20px;
     color: #ffffff;
+  }
+  .container-logo {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  nav .logo {
+    float: none;
+    width: 30rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    padding-top: 2.3rem;
   }
   nav :checked ~ .links {
     bottom: 0;
