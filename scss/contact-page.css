@@ -484,22 +484,4 @@ input[type=submit]:hover {
 .submit-btn:hover {
   opacity: 2;
 }
-
-.container-image {
-  background-image: url(../img/about_us1.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.container-image-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
 /*# sourceMappingURL=contact-page.css.map */

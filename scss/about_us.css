@@ -6,6 +6,11 @@
 1025px — 1200px: Desktops, large screens
 1201px and more —  Extra large screens, TV
 */
+/*
+* {
+  border: 1px solid red;
+}
+*/
 html,
 body {
   font-size: 62.5%;
@@ -231,16 +236,108 @@ nav .icon-burger .line {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.container-image-text {
+  text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  text-align: center;
-  font-size: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-image-text {
+  font-size: 3rem;
   color: #ffffff;
+  text-shadow: 0.1rem 0.1rem #161414;
+  letter-spacing: 0.4rem;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.description {
+  background-color: #bad7df;
+  color: #000000;
+  margin: 3rem auto;
+  width: 50%;
+  padding: 0.5rem 1.5rem;
+}
+
+.description p {
+  font-size: 2.2rem;
+}
+
+.ingredient {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70%;
+  margin: 3rem auto;
+}
+
+.ingredient > .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
+  /*grow | shrink | basis */
+  height: 25vh;
+  margin: 2rem 5rem;
+  font-size: 2.7rem;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  background-color: #efb7ba;
+}
+
+.box img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
+
+/*
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+*/
+@media screen and (max-width: 1024px) {
+  .description {
+    width: 65%;
+  }
+  .ingredient {
+    width: 80%;
+  }
+  .ingredient > .box {
+    margin: 2rem 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ingredient > .box {
+    margin: 2rem 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ingredient > .box {
+    margin: 2rem 1rem;
+  }
 }
 /*# sourceMappingURL=about_us.css.map */
