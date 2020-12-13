@@ -245,22 +245,46 @@ nav .icon-burger .line {
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
+}
+
+.box {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-color: $pink;
 }
 
-.box img {
-  object-fit: cover;
-  width: 100%;
-  max-height: 100%;
+.box1 {
+  order: 1;
+  background-image: url(../img/fresh.jpg);
 }
-
+.box2 {
+  order: 2;
+}
+.box3 {
+  order: 3;
+  background-color: #fdc8c8;
+}
+.box4 {
+  order: 4;
+  background-image: url(../img/high_quality.jpg);
+}
+.box5 {
+  order: 5;
+  background-image: url(../img/affordable.jpg);
+}
+.box6 {
+  order: 6;
+}
 /*
 320px — 480px: Mobile devices
 481px — 768px: iPads, Tablets
 769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
 */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1450px) {
   .description {
     width: 65%;
   }
@@ -273,11 +297,19 @@ nav .icon-burger .line {
 }
 @media screen and (max-width: 768px) {
   .ingredient > .box {
-    margin: 2rem 2rem;
+    margin: 2rem 6rem;
+  }
+  .ingredient {
+    width: 90%;
+  }
+  .box4 {
+    order: 3;
+  }
+  .box3 {
+    order: 4;
   }
 }
 @media screen and (max-width: 480px) {
   .ingredient > .box {
-    margin: 2rem 1rem;
   }
 }

@@ -395,7 +395,7 @@ nav .icon-burger .line {
 
 .locations-box {
   margin: 2rem 4rem;
-  /*  background-color: rgb(245, 189, 245); */
+  background-color: #f5bdf5;
   background-color: #efb7ba;
   border: 0.3rem groove black;
   -webkit-box-flex: 1;
