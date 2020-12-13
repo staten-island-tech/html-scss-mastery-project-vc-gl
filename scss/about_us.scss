@@ -186,3 +186,21 @@ nav .icon-burger .line {
     opacity: 0;
   }
 }
+
+.container-image {
+  background-image: url(../img/about_us1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+}
+.container-image-text {
+  
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-size: 2rem;
+  color: $white;
+}
