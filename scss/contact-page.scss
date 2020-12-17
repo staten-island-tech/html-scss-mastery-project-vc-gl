@@ -310,7 +310,7 @@ nav .icon-burger .line {
 }
 
 .locations {
-  margin: 8rem 15rem 2rem; 
+  margin: 8rem 15rem 2rem;
   text-align: center;
   font-size: 2rem;
 }
@@ -334,7 +334,7 @@ nav .icon-burger .line {
   justify-content: center;
   width: 70%;
   margin: 3rem auto;
-} 
+}
 
 .locations-headquarters {
   margin: 2rem 4rem;
@@ -348,10 +348,10 @@ nav .icon-burger .line {
 
 .locations-box {
   margin: 2rem 4rem;
- /* background-color: rgb(245, 189, 245); */
+  /* background-color: rgb(245, 189, 245); */
   background-color: $pink;
   border: 0.3rem groove black;
- /* flex-grow: 1;
+  /* flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 48%;
   justify-content: space-around; */
@@ -429,4 +429,15 @@ input[type=submit]:hover {
 
 .submit-btn:hover {
   opacity: 2;
+}
+
+@media screen and (max-width: 768px) {
+  // locations-gallery {
+   // width: 70%;
+   // margin: 2rem auto;
+  }
+  .locations {
+    margin: 8rem 15rem 2rem;
+  }
+  
 }
