@@ -388,4 +388,10 @@ nav .icon-burger .line {
             order: 4;
   }
 }
+
+.copyright {
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 1.2rem;
+}
 /*# sourceMappingURL=about_us.css.map */
