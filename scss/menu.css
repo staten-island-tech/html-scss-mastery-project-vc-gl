@@ -6,6 +6,11 @@
 1025px — 1200px: Desktops, large screens
 1201px and more —  Extra large screens, TV
 */
+/*
+* {
+  border: 1px solid red;
+}
+*/
 html,
 body {
   font-size: 62.5%;
@@ -281,7 +286,7 @@ nav .icon-burger .line {
 
 .specials-gallery-header-1 {
   font-size: 3.5rem;
-  font-family: 'Sofia', cursive;
+  font-family: "Sofia", cursive;
   opacity: 0;
   color: #110a0a;
   position: absolute;
@@ -300,7 +305,7 @@ nav .icon-burger .line {
 
 .specials-gallery-header-2 {
   font-size: 3.5rem;
-  font-family: 'Sofia', cursive;
+  font-family: "Sofia", cursive;
   opacity: 0;
   color: #110a0a;
   position: absolute;
@@ -319,7 +324,7 @@ nav .icon-burger .line {
 
 .specials-gallery-header-3 {
   font-size: 3.5rem;
-  font-family: 'Sofia', cursive;
+  font-family: "Sofia", cursive;
   opacity: 0;
   color: #110a0a;
   position: absolute;
@@ -369,9 +374,98 @@ nav .icon-burger .line {
   }
 }
 
+.menu {
+  background-color: burlywood;
+  padding: 0.5rem;
+}
+
 .menu-header {
   text-align: center;
   font-size: 3rem;
   margin: 5rem 0 4rem 0;
+}
+
+.menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 70%;
+  margin: 3rem auto;
+  font-size: 2.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu-container-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 22rem;
+  width: 45%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.one {
+  background-image: url(../img/menu_bread.jpg);
+}
+
+.two {
+  background-image: url(../img/menu_cake.jpg);
+}
+
+.three {
+  background-image: url(../img/menu_cookie.jpg);
+}
+
+.four {
+  background-image: url(../img/menu_ice_cream.jpg);
+}
+
+.five {
+  background-image: url(../img/menu_drink.jpg);
+}
+
+.six {
+  background-image: url(../img/menu_other.jpg);
+}
+
+.menu-container-box a {
+  text-decoration: none;
+  padding: 1rem;
+  color: #ffffff;
+  background-color: rgba(26, 26, 25, 0.349);
+}
+
+.menu-container-box a:hover {
+  background-color: rgba(26, 26, 25, 0.616);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+@media screen and (max-width: 1200px) {
+  .menu-container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 400px) {
+  .menu-container-box {
+    margin: 1rem;
+  }
 }
 /*# sourceMappingURL=menu.css.map */

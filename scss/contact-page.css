@@ -6,6 +6,10 @@
 1025px — 1200px: Desktops, large screens
 1201px and more —  Extra large screens, TV
 */
+* {
+  border: 1px red solid;
+}
+
 html,
 body {
   font-size: 62.5%;
@@ -354,7 +358,7 @@ nav .icon-burger .line {
 }
 
 .locations {
-  margin: 8rem 15rem 2rem; 
+  margin: 8rem 15rem 2rem;
   text-align: center;
   font-size: 2rem;
 }
@@ -373,11 +377,11 @@ nav .icon-burger .line {
   letter-spacing: 1rem;
 }
 
- .locations-gallery {
+.locations-gallery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
- -ms-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -385,9 +389,9 @@ nav .icon-burger .line {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 70%;
+  width: 85%;
   margin: 3rem auto;
-} 
+}
 
 .locations-headquarters {
   margin: 2rem 4rem;
@@ -404,15 +408,10 @@ nav .icon-burger .line {
   /* background-color: rgb(245, 189, 245); */
   background-color: #efb7ba;
   border: 0.3rem groove black;
- /* -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  -ms-flex-preferred-size: 48%;
-      flex-basis: 48%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; */
+  /* flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 48%;
+  justify-content: space-around; */
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   height: 15vh;
@@ -491,5 +490,25 @@ input[type=submit]:hover {
 
 .submit-btn:hover {
   opacity: 2;
+}
+
+@media screen and (max-width: 1368px) {
+  .locations-gallery {
+    width: 70%;
+    margin: 2rem auto;
+  }
+  .locations {
+    margin: 8rem 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 1268px) {
+  .locations-gallery {
+    width: 95%;
+    margin: 1rem auto;
+  }
+  .locations {
+    margin: 8rem 1rem 2rem;
+  }
 }
 /*# sourceMappingURL=contact-page.css.map */

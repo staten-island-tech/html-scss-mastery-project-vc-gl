@@ -1,6 +1,9 @@
 @import "_queries.scss";
 @import "_variables.scss";
 
+* {
+  border: 1px red solid;
+}
 html,
 body {
   font-size: 62.5%;
@@ -332,7 +335,7 @@ nav .icon-burger .line {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  width: 70%;
+  width: 85%;
   margin: 3rem auto;
 }
 
@@ -431,13 +434,21 @@ input[type=submit]:hover {
   opacity: 2;
 }
 
-@media screen and (max-width: 768px) {
-  // locations-gallery {
-   // width: 70%;
-   // margin: 2rem auto;
+@media screen and (max-width: 1368px) {
+  .locations-gallery {
+    width: 70%;
+    margin: 2rem auto;
   }
   .locations {
-    margin: 8rem 15rem 2rem;
+    margin: 8rem 1rem 2rem;
   }
-  
+}
+@media screen and (max-width: 1268px) {
+  .locations-gallery {
+    width: 95%;
+    margin: 1rem auto;
+  }
+  .locations {
+    margin: 8rem 1rem 2rem;
+  }
 }
