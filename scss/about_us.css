@@ -89,9 +89,9 @@ nav .links li {
 }
 
 nav .links a:link,
-a:visited,
-a:active,
-a:focus {
+nav .links a:visited,
+nav .links a:active,
+nav .links a:focus {
   display: block;
   padding: 0;
   font-size: 2.5rem;
@@ -102,9 +102,9 @@ a:focus {
 }
 
 nav .links a:link:before,
-a:visited:before,
-a:active:before,
-a:focus:before {
+nav .links a:visited:before,
+nav .links a:active:before,
+nav .links a:focus:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -121,9 +121,9 @@ a:focus:before {
 }
 
 nav .links a:link:hover:before,
-a:visited:hover:before,
-a:active:hover:before,
-a:focus:hover:before {
+nav .links a:visited:hover:before,
+nav .links a:active:hover:before,
+nav .links a:focus:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
@@ -186,9 +186,9 @@ nav .icon-burger .line {
     transition: all 0.5s ease-in-out;
   }
   nav .links a:link,
-  a:visited,
-  a:active,
-  a:focus {
+  nav .links a:visited,
+  nav .links a:active,
+  nav .links a:focus {
     font-size: 20px;
     color: #ffffff;
   }

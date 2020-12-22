@@ -186,9 +186,9 @@ nav .icon-burger .line {
     transition: all 0.5s ease-in-out;
   }
   nav .links a:link,
-  a:visited,
-  a:active,
-  a:focus {
+  nav .links a:visited,
+  nav .links a:active,
+  nav .links a:focus {
     font-size: 20px;
     color: #ffffff;
   }
@@ -375,7 +375,7 @@ nav .icon-burger .line {
 }
 
 .menu {
-  background-color: burlywood;
+  background-color: rgba(224, 178, 117, 0.65);
   padding: 0.5rem;
 }
 
