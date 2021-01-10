@@ -476,8 +476,8 @@ input[type=submit]:hover {
   flex-flow: row wrap;
   padding: 1rem;
   background-color: rgb(189, 228, 243);
-  column-count: 2;
-  column-gap: 56rem;
+  column-count: 3;
+  column-gap: 3rem;
 }
 
 .footer-links {
@@ -503,12 +503,71 @@ input[type=submit]:hover {
 }
 
 .column-2 {
-  display: block;
   font-size: 1.9rem;
   flex: 1 50%;
-  margin-right: 1.5rem;
-  float: right;
 }
+
+.social-media {
+  list-style: none;
+}
+
+.social-media ul {
+  display: inline-block;
+}
+
+.social-media li {
+  float: left;
+  margin-right: 0.8rem;
+}
+
+.fa a:link,
+.fa a:visited,
+.fa a:active,
+.fa a:focus {
+  text-decoration: none;
+}
+
+.fa {
+  padding: 0.8rem;
+  font-size: 3rem;
+  width: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5px; 
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  color: $white; 
+  background-color: #3b5998;
+}
+
+.fa-twitter {
+  color: $white;
+  background-color: #55acee;
+}
+
+.fa-instagram {
+  color: $white;
+  background-color: #f40083;
+}
+
+.fa-youtube {
+  color: $white;
+  background-color: #bb0000;
+}
+
+.column-3 {
+  display: inline-block;
+  font-size: 1.9rem;
+/*  -webkit-box-flex: 1;
+      -ms-flex: 1 50%;
+          flex: 1 50%;
+  margin-right: 1.5rem; */
+} 
 
 #email {
   width: 52vh;
@@ -524,3 +583,7 @@ input[type=submit]:hover {
   padding: 1.2rem;
   background-color: rgb(189, 228, 243);
 }
+
+/* .footer > html, body {
+  flex: 1 33.3%;
+} */
