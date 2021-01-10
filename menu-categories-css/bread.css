@@ -6,13 +6,13 @@
 1025px — 1200px: Desktops, large screens
 1201px and more —  Extra large screens, TV
 */
-body html,
-body body {
+html,
+body {
   font-size: 62.5%;
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Abel", sans-serif;
 }
 
@@ -44,32 +44,20 @@ body nav .logo {
   width: 40rem;
   height: 100%;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   vertical-align: middle;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   padding-top: 1.2rem;
   font-size: 2.5rem;
   font-family: "Abel", sans-serif;
   font-weight: bold;
   color: black;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#3b74df),
-    color-stop(25%, #5387c7),
-    to(#00d4ff)
-  );
-  background-image: linear-gradient(
-    90deg,
-    #3b74df 0%,
-    #5387c7 25%,
-    #00d4ff 100%
-  );
+  background-image: -webkit-gradient(linear, left top, right top, from(#3b74df), color-stop(25%, #5387c7), to(#00d4ff));
+  background-image: linear-gradient(90deg, #3b74df 0%, #5387c7 25%, #00d4ff 100%);
   background-size: 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -84,10 +72,10 @@ body nav .links {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: auto;
 }
 
@@ -120,7 +108,7 @@ body nav .links a:focus:before {
   border-bottom: solid 0.2rem #efb7ba;
   visibility: hidden;
   -webkit-transform: scaleX(0);
-  transform: scaleX(0);
+          transform: scaleX(0);
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
   transition: -webkit-transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;
@@ -147,7 +135,7 @@ body nav .icon-burger {
   right: 5%;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 body nav .icon-burger .line {
@@ -179,28 +167,16 @@ body nav .icon-burger .line {
     height: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
-    background-image: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(#2673d8c2),
-      color-stop(25%, #3066a7be),
-      to(#00d9ffbb)
-    );
-    background-image: linear-gradient(
-      90deg,
-      #2673d8c2 0%,
-      #3066a7be 25%,
-      #00d9ffbb 100%
-    );
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    background-image: -webkit-gradient(linear, left top, right top, from(#2673d8c2), color-stop(25%, #3066a7be), to(#00d9ffbb));
+    background-image: linear-gradient(90deg, #2673d8c2 0%, #3066a7be 25%, #00d9ffbb 100%);
     overflow: hidden;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+            box-sizing: border-box;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
   }
@@ -223,7 +199,7 @@ body nav .icon-burger .line {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     padding-top: 2.3rem;
   }
   body nav :checked ~ .links {
@@ -234,14 +210,43 @@ body nav .icon-burger .line {
   }
   body nav :checked ~ .icon-burger .line:nth-child(1) {
     -webkit-transform: translateY(10px) rotate(225deg);
-    transform: translateY(10px) rotate(225deg);
+            transform: translateY(10px) rotate(225deg);
   }
   body nav :checked ~ .icon-burger .line:nth-child(3) {
     -webkit-transform: translateY(-10px) rotate(-225deg);
-    transform: translateY(-10px) rotate(-225deg);
+            transform: translateY(-10px) rotate(-225deg);
   }
   body nav :checked ~ .icon-burger .line:nth-child(2) {
     opacity: 0;
   }
+}
+
+.bread-pic {
+  background-image: url(../img/menu_bread.jpg);
+  height: 65vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bread-intro {
+  font-size: 3.5rem;
+  color: #ffffff;
+  text-shadow: 0.1rem 0.1rem #161414;
+  letter-spacing: 0.5rem;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 1rem;
 }
 /*# sourceMappingURL=bread.css.map */

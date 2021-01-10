@@ -605,7 +605,7 @@ input[type=submit]:hover {
   font-size: 3rem;
   width: 2.5rem;
   text-align: center;
-  margin-bottom: 1.5px; 
+  margin-bottom: 1.5px;
   border-radius: 50%;
 }
 
@@ -614,33 +614,33 @@ input[type=submit]:hover {
 }
 
 .fa-facebook {
-  color: #fff; 
+  color: #ffffff;
   background-color: #3b5998;
 }
 
 .fa-twitter {
-  color: #fff;
+  color: #ffffff;
   background-color: #55acee;
 }
 
 .fa-instagram {
-  color: #fff;
+  color: #ffffff;
   background-color: #f40083;
 }
 
 .fa-youtube {
-  color: #fff;
+  color: #ffffff;
   background-color: #bb0000;
 }
 
 .column-3 {
   display: inline-block;
   font-size: 1.9rem;
-/*  -webkit-box-flex: 1;
+  /*  -webkit-box-flex: 1;
       -ms-flex: 1 50%;
           flex: 1 50%;
   margin-right: 1.5rem; */
-} 
+}
 
 #email {
   width: 52vh;
@@ -655,11 +655,10 @@ input[type=submit]:hover {
   text-align: center;
   font-size: 1.6rem;
   padding: 1.2rem;
-  background-color: #bde4f3; 
+  background-color: #bde4f3;
 }
 
 /* .footer > html, body {
   flex: 1 33.3%;
 } */
-
 /*# sourceMappingURL=contact-page.css.map */
