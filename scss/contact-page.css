@@ -402,6 +402,8 @@ nav .icon-burger .line {
   border: 0.3rem groove black;
   height: 15vh;
   padding: 2rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .locations-box {
