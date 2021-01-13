@@ -426,30 +426,46 @@ body nav .icon-burger .line {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .main-container-left-category-text {
+    width: 33%;
     margin: 1rem;
   }
   .main-container-left-category-text a {
     font-size: 2rem;
   }
   .main-container-right-images {
-    width: 40%;
+    width: 38%;
     margin: 1rem;
   }
   .left {
-    margin: 1rem 0rem;
-    margin-left: 4rem;
+    margin: 1rem auto;
     width: 90%;
   }
   .right {
     width: 90%;
+    margin: 1rem auto;
   }
   .text-1 {
     padding: 1rem;
   }
   .text-6 {
     padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main-container-right-container-images {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-container-right-images {
+    width: 90%;
   }
 }
 
