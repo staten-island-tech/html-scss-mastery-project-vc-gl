@@ -301,14 +301,18 @@ body nav .icon-burger .line {
 }
 
 .text-1 {
-  padding-top: 4rem;
+  padding-top: 5rem;
 }
 
 .text-6 {
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
+  margin-bottom: 1rem;
 }
 
-.main-container-left-category-text a {
+.main-container-left-category-text a:link,
+.main-container-left-category-text a:visited,
+.main-container-left-category-text a:active,
+.main-container-left-category-text a:focus {
   color: #ffffff;
   text-decoration: none;
   font-size: 2.5rem;
@@ -441,7 +445,10 @@ body nav .icon-burger .line {
     width: 33%;
     margin: 1rem;
   }
-  .main-container-left-category-text a {
+  .main-container-left-category-text a:link,
+  .main-container-left-category-text a:visited,
+  .main-container-left-category-text a:active,
+  .main-container-left-category-text a:focus {
     font-size: 2rem;
   }
   .main-container-right-images {
