@@ -1,6 +1,10 @@
 @import "../scss/_variables.scss";
 @import "../scss/_queries.scss";
 
+* {
+  border: 1px solid red;
+}
+
 html,
 body {
   font-size: 62.5%;
@@ -36,3 +40,60 @@ body {
   font-weight: 500;
   margin: 1rem;
 }
+
+.bread {
+  width: 90%;
+  text-align: center;
+  margin: 1rem auto;
+  font-size: 2rem;
+  display: flex;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.main-container .left {
+  flex-flow: column wrap;
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+}
+
+.main-container .right {
+  flex-basis: 10%;
+}
+
+.main-container-left-category-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+  flex-grow: 0;
+  margin: 1rem;
+  padding: 1rem;
+  color: $blue;
+}
+
+.main-container-right-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 5;
+  height: 10rem;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1rem;
+}
+/*
+display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin: 3rem auto;
+  */
