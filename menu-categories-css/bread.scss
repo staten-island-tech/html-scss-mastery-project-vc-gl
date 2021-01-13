@@ -1,9 +1,11 @@
 @import "../scss/_variables.scss";
 @import "../scss/_queries.scss";
 
+/*
 * {
   border: 1px solid red;
 }
+*/
 
 html,
 body {
@@ -175,6 +177,12 @@ body {
   }
   .right {
     width: 75%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main-container-left-category-text {
+    margin: 2rem;
   }
 }
 
