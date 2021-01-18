@@ -186,22 +186,7 @@ $black: #000000;
 }
 
 @mixin menu {
-
-  html,
-  body {
-    font-size: 62.5%;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: $main-font;
-  }
-
-  body {
-    @include nav;
-  }
-
-  .bread-pic {
-    background-image: url(../img/menu_bread.jpg);
+  .category-pic {
     height: 65vh;
     width: 100vw;
     background-size: cover;
@@ -212,7 +197,7 @@ $black: #000000;
     align-items: center;
   }
 
-  .bread {
+  .category {
     text-align: center;
     margin: 1rem auto;
     font-size: 2rem;
@@ -364,7 +349,7 @@ $black: #000000;
   }
 
   @media screen and (max-width: 700px) {
-    .bread {
+    .category {
       flex-direction: column;
       margin: 1rem;
     }

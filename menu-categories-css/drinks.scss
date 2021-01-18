@@ -1,4 +1,20 @@
 @import "../scss/_variables.scss";
 @import "../scss/_queries.scss";
 
-@mixin 
+html,
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $main-font;
+}
+
+body {
+  @include menu;
+  @include nav;
+}
+
+.category-pic {
+  background-image: url(../img/Drink-top.jpg);
+}
