@@ -353,13 +353,6 @@ body nav .icon-burger .line {
   width: 100%;
 }
 
-/*
-@media screen and (max-width: 1500px) {
-  .main-container-right-images {
-    margin: 0.8rem;
-  }
-}
-*/
 @media screen and (max-width: 1600px) {
   .main-container-right-images {
     margin: 1rem;
