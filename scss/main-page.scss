@@ -283,7 +283,7 @@ nav .icon-burger .line {
     margin: 2rem 6rem;
   }
 }
-
+/*
 .submit-btn-2 {
   background-color: $pink;
   border: none;
@@ -305,7 +305,6 @@ nav .icon-burger .line {
   flex-flow: row wrap;
   padding: 1rem;
   background-color: rgb(189, 228, 243);
-  /* column-count: 3; */
   column-gap: 3rem;
   flex-direction: row;
   flex-wrap: wrap;
@@ -403,10 +402,6 @@ nav .icon-burger .line {
 .column-3 {
   display: inline-block;
   font-size: 1.9rem;
-  /*  -webkit-box-flex: 1;
-      -ms-flex: 1 50%;
-          flex: 1 50%;
-  margin-right: 1.5rem; */
   width: auto;
   height: 16vh;
   margin: 2rem 0;
@@ -425,4 +420,8 @@ nav .icon-burger .line {
   font-size: 1.6rem;
   padding: 1.2rem;
   background-color: rgb(189, 228, 243);
+}
+*/
+.footer-container {
+  @include footer-var;
 }

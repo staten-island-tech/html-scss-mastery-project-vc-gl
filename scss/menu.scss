@@ -407,3 +407,7 @@ nav .icon-burger .line {
   padding: 1.2rem;
   /* background-color: #bde4f3; */
 }
+
+.footer-container {
+  @include footer-var;
+}

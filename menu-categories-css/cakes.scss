@@ -1,20 +1,24 @@
 @import "../scss/_variables.scss";
 @import "../scss/_queries.scss";
 
-html, 
+html,
 body {
-    font-size: 62.5%;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: $main-font;
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $main-font;
 }
 
 body {
-    @include nav;
-    @include menu;
+  @include nav;
+  @include menu;
 }
 
 .category-pic {
-    background-image: url(../img/menu_cake.jpg);
+  background-image: url(../img/menu_cake.jpg);
+}
+
+.footer-container {
+  @include footer-var;
 }

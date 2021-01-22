@@ -240,14 +240,7 @@ body {
     width: 90%;
   }
 }
-/*
-.left {
-  margin: 3rem 10rem;
-  width: 20%;
-}
 
-.right {
-  margin: 3rem;
-  width: 70%;
+.footer-container {
+  @include footer-var;
 }
-*/
