@@ -283,8 +283,145 @@ nav .icon-burger .line {
   }
 }
 
+.submit-btn-2 {
+  background-color: $pink;
+  border: none;
+  color: $black;
+  border-radius: 10%;
+  text-align: center;
+  padding: 0.8rem 2rem;
+  opacity: 0.7;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.submit-btn-2:hover {
+  opacity: 2;
+}
+
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 1rem;
+  background-color: rgb(189, 228, 243);
+ /* column-count: 3; */
+  column-gap: 3rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  display: block;
+  list-style: none;
+  font-size: 1.9rem;
+  flex: 1 50%;
+  margin-right: 1.5rem;
+  text-transform: uppercase;
+}
+
+.footer-links a:link,
+.footer-links a:visited,
+.footer-links a:active,
+.footer-links a:focus {
+  text-decoration: none;
+  color: $black;
+}
+
+.footer-links a:hover {
+  color: rgb(252, 58, 91);
+  transition: all 0.5s;
+}
+
+.column-1 {
+  width: auto;
+  height: 16vh;
+  margin: 2rem 0;
+}
+
+.column-2 {
+  font-size: 1.9rem;
+  flex: 1 50%;
+  width: auto;
+  height: 16vh;
+  margin: 2rem 0;
+}
+
+.social-media {
+  list-style: none;
+}
+
+.social-media ul {
+  display: inline-block;
+}
+
+.social-media li {
+  float: left;
+  margin-right: 0.8rem;
+}
+
+.fa a:link,
+.fa a:visited,
+.fa a:active,
+.fa a:focus {
+  text-decoration: none;
+}
+
+.fa {
+  padding: 0.8rem;
+  font-size: 3rem;
+  width: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5px; 
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  color: $white; 
+  background-color: #3b5998;
+}
+
+.fa-twitter {
+  color: $white;
+  background-color: #55acee;
+}
+
+.fa-instagram {
+  color: $white;
+  background-color: #f40083;
+}
+
+.fa-youtube {
+  color: $white;
+  background-color: #bb0000;
+}
+
+.column-3 {
+  display: inline-block;
+  font-size: 1.9rem;
+/*  -webkit-box-flex: 1;
+      -ms-flex: 1 50%;
+          flex: 1 50%;
+  margin-right: 1.5rem; */
+  width: auto;
+  height: 16vh;
+  margin: 2rem 0;
+} 
+
+#email {
+  width: 52vh;
+  padding: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+}
+
 .copyright {
   text-align: center;
   font-size: 1.6rem;
   padding: 1.2rem;
+  background-color: rgb(189, 228, 243);
 }
