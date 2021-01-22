@@ -154,8 +154,8 @@ nav .icon-burger .line {
 }
 
 .image1 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25))), url(../img/food.jpeg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.25)), url(../img/food.jpeg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url(../img/food.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../img/food.jpeg);
   height: 93vh;
   width: 100vw;
   background-size: cover;
@@ -399,8 +399,8 @@ nav .icon-burger .line {
 .column-2 {
   font-size: 1.9rem;
   -webkit-box-flex: 1;
-      -ms-flex: 1 50%;
-          flex: 1 50%;
+      -ms-flex: 1 18%;
+          flex: 1 18%;
   width: auto;
   height: 16vh;
   margin: 2rem 0;

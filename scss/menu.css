@@ -227,8 +227,8 @@ nav .icon-burger .line {
 }
 
 .menu-pic {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25))), url(../img/menu-header.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.25)), url(../img/menu-header.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4))), url(../img/menu-header.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url(../img/menu-header.jpg);
   height: 65vh;
   width: 100vw;
   background-size: cover;

@@ -585,8 +585,8 @@ input[type=submit]:hover {
 .column-2 {
   font-size: 1.9rem;
   -webkit-box-flex: 1;
-      -ms-flex: 1 50%;
-          flex: 1 50%;
+      -ms-flex: 1 18%;
+          flex: 1 18%;
   width: auto;
   height: 16vh;
   margin: 2rem 0;
